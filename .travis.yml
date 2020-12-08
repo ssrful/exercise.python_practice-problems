@@ -1,0 +1,9 @@
+#language python
+language: python
+
+#add script command and the path to script to make Travis run the actual script
+script:
+  - python -m unittest discover -s ./src/test/ -p '*_test.py'
+
+#script:
+  - pytest
